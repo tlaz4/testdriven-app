@@ -83,7 +83,7 @@ class UsersList(Resource):
                 return response_object, 201
 
             else:
-                response_object['message'] = 
+                response_object['message'] = \
                 'Sorry. That email already exists.'
                 return response_object, 400
 
