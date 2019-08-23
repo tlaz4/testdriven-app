@@ -74,18 +74,19 @@
 <p id="n3" class="pln"><a href="#n3">3</a></p>
 <p id="n4" class="stm run hide_run"><a href="#n4">4</a></p>
 <p id="n5" class="pln"><a href="#n5">5</a></p>
-<p id="n6" class="stm run hide_run"><a href="#n6">6</a></p>
+<p id="n6" class="pln"><a href="#n6">6</a></p>
 <p id="n7" class="stm run hide_run"><a href="#n7">7</a></p>
 <p id="n8" class="stm run hide_run"><a href="#n8">8</a></p>
 <p id="n9" class="stm run hide_run"><a href="#n9">9</a></p>
-<p id="n10" class="pln"><a href="#n10">10</a></p>
-<p id="n11" class="stm run hide_run"><a href="#n11">11</a></p>
+<p id="n10" class="stm run hide_run"><a href="#n10">10</a></p>
+<p id="n11" class="pln"><a href="#n11">11</a></p>
 <p id="n12" class="stm run hide_run"><a href="#n12">12</a></p>
 <p id="n13" class="stm run hide_run"><a href="#n13">13</a></p>
-<p id="n14" class="pln"><a href="#n14">14</a></p>
-<p id="n15" class="stm run hide_run"><a href="#n15">15</a></p>
+<p id="n14" class="stm run hide_run"><a href="#n14">14</a></p>
+<p id="n15" class="pln"><a href="#n15">15</a></p>
 <p id="n16" class="stm run hide_run"><a href="#n16">16</a></p>
 <p id="n17" class="stm run hide_run"><a href="#n17">17</a></p>
+<p id="n18" class="stm run hide_run"><a href="#n18">18</a></p>
 
             </td>
             <td class="text">
@@ -94,18 +95,19 @@
 <p id="t3" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t4" class="stm run hide_run"><span class="nam">app</span> <span class="op">=</span> <span class="nam">create_app</span><span class="op">(</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t5" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t6" class="stm run hide_run"><span class="key">class</span> <span class="nam">BaseTestCase</span><span class="op">(</span><span class="nam">TestCase</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
-<p id="t7" class="stm run hide_run">        <span class="key">def</span> <span class="nam">create_app</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
-<p id="t8" class="stm run hide_run">                <span class="nam">app</span><span class="op">.</span><span class="nam">config</span><span class="op">.</span><span class="nam">from_object</span><span class="op">(</span><span class="str">'project.config.TestingConfig'</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
-<p id="t9" class="stm run hide_run">                <span class="key">return</span> <span class="nam">app</span><span class="strut">&nbsp;</span></p>
-<p id="t10" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t11" class="stm run hide_run">        <span class="key">def</span> <span class="nam">setUp</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
-<p id="t12" class="stm run hide_run">                <span class="nam">db</span><span class="op">.</span><span class="nam">create_all</span><span class="op">(</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
-<p id="t13" class="stm run hide_run">                <span class="nam">db</span><span class="op">.</span><span class="nam">session</span><span class="op">.</span><span class="nam">commit</span><span class="op">(</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
-<p id="t14" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t15" class="stm run hide_run">        <span class="key">def</span> <span class="nam">tearDown</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
-<p id="t16" class="stm run hide_run">                <span class="nam">db</span><span class="op">.</span><span class="nam">session</span><span class="op">.</span><span class="nam">remove</span><span class="op">(</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
-<p id="t17" class="stm run hide_run">                <span class="nam">db</span><span class="op">.</span><span class="nam">drop_all</span><span class="op">(</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t6" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t7" class="stm run hide_run"><span class="key">class</span> <span class="nam">BaseTestCase</span><span class="op">(</span><span class="nam">TestCase</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t8" class="stm run hide_run">    <span class="key">def</span> <span class="nam">create_app</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t9" class="stm run hide_run">        <span class="nam">app</span><span class="op">.</span><span class="nam">config</span><span class="op">.</span><span class="nam">from_object</span><span class="op">(</span><span class="str">'project.config.TestingConfig'</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t10" class="stm run hide_run">        <span class="key">return</span> <span class="nam">app</span><span class="strut">&nbsp;</span></p>
+<p id="t11" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t12" class="stm run hide_run">    <span class="key">def</span> <span class="nam">setUp</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t13" class="stm run hide_run">        <span class="nam">db</span><span class="op">.</span><span class="nam">create_all</span><span class="op">(</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t14" class="stm run hide_run">        <span class="nam">db</span><span class="op">.</span><span class="nam">session</span><span class="op">.</span><span class="nam">commit</span><span class="op">(</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t15" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t16" class="stm run hide_run">    <span class="key">def</span> <span class="nam">tearDown</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t17" class="stm run hide_run">        <span class="nam">db</span><span class="op">.</span><span class="nam">session</span><span class="op">.</span><span class="nam">remove</span><span class="op">(</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t18" class="stm run hide_run">        <span class="nam">db</span><span class="op">.</span><span class="nam">drop_all</span><span class="op">(</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 
             </td>
         </tr>
@@ -116,7 +118,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v4.5.3</a>,
-            created at 2019-07-22 02:44
+            created at 2019-08-22 18:41
         </p>
     </div>
 </div>
